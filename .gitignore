@@ -3,17 +3,20 @@
 .ipynb_checkpoints/*
 *.ipynb
 
-*_pycache_*
-*/_pycache_/*
+*__pycache__*
+*/__pycache__/*
 *.pyc
 
 *.gz
 
+*.png
+
 *.csv
+*.tsv
 
 *.txt
 
-*google-python-exercises
-
 *.paths
 
+*google-python-exercises
+*quantumblack
