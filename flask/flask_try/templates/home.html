@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+	{% for test in tests %}
+		 <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="#">The experimental method is: {{ test.experiment }}</a>
+              <small class="text-muted">The strain rate is: {{ test.strain_rate }}</small>
+            </div>
+            <p class="article-content">The tested material is: {{ test.material }}</p>
+          </div>
+        </article>
+	{% endfor %}
+{% endblock content %}
