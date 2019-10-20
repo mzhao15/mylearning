@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+{% block content %}
+<article class="media content-section">
+  <div class="media-body">
+    <div class="article-metadata">
+      <a class="mr-2" href="#">The calculated cost is:</a>
+      <small class="text-muted">Meng Zhao</small>
+    </div>
+    <p class="article-content">With the given price and quantity, the total cost is:</p>
+  </div>
+</article>
+
+<div class="row">
+	<div class="col">
+		<form>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Price</label>
+                <input class="form-control" type="number" placeholder="0.00" id="exampleFormControlInput1"></input>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlInput2">Number</label>
+                <input class="form-control" type="number" placeholder="0.00" id="exampleFormControlInput2"></input>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlInput3">Promo</label>
+                <input class="form-control" type="number" placeholder="0.00" id="exampleFormControlInput3"></input>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Text area</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+	</div>
+
+	<div class="col">
+		<form>
+            <div class="form-group">
+                <label for="exampleFormControlInput4">Price</label>
+                <input class="form-control" type="number" placeholder="0.00" id="exampleFormControlInput4"></input>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlInput5">Number</label>
+                <input class="form-control" type="number" placeholder="0.00" id="exampleFormControlInput5"></input>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlInput6">Promo</label>
+                <input class="form-control" type="text" id="exampleFormControlInput6"></input>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea2">Text area</label>
+                <textarea class="form-control" id="exampleFormControlTextarea2" rows="2"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+	</div>
+
+	<div class="col">
+		<form>
+            <div class="form-group">
+                <label for="exampleFormControlInput7">Price</label>
+                <input class="form-control" type="number" placeholder="0.00" id="exampleFormControlInput7"></input>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlInput8">Number</label>
+                <input class="form-control" type="number" placeholder="0.00" id="exampleFormControlInput8"></input>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlInput9">Promo</label>
+                <input class="form-control" type="number" placeholder="0.00" id="exampleFormControlInput9"></input>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea3">Text area</label>
+                <textarea class="form-control" id="exampleFormControlTextarea3" rows="2"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+	</div>
+</div>
+
+{% endblock content %}

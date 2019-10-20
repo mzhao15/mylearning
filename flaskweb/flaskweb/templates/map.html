@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block content %}
+<article class="media content-section">
+  <div class="media-body">
+    <div class="article-metadata">
+      <a class="mr-2" href="#">The city is:</a>
+      <small class="text-muted">Meng Zhao</small>
+    </div>
+    <p class="article-content">From our system, the most beautiful place is </p>
+  </div>
+</article>
+
+<!-- <div class="media-body">
+	<div id="map" style="width:400px;height:400px;background:yellow"></div>
+	<script>
+		function myMap() {
+			var mapOptions = {
+    		center: new google.maps.LatLng(40.74, -73.989),
+    		zoom: 10,
+    		mapTypeId: google.maps.MapTypeId.HYBRID
+		}
+		var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+	}
+	</script>
+
+	<script asyn defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwVpCFK0V1LPKhWdGWO0Ce16lRA3-mMwk&callback=myMap"></script>
+</div> -->
+
+
+{% endblock content %}

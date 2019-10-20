@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block content %}
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+
+<article class="media content-section border border-danger">
+  <div class="media-body">
+    <div class="article-metadata">
+      <a class="mr-2 text-info " href="#">Below is the queried information:</a>
+      <small class="text-muted">update every second</small>
+    </div>
+    <p class="article-content">The top 5 most dangerous cities are:</p>
+  </div>
+</article>
+
+<div>
+	<ul>
+		<li class="inline"><a href="#" id="piechart">Pie chart</a></li>
+		<li class="inline"><a href="#" id="bubblechart">Bubble chart</a></li>
+	</ul>
+</div>
+
+<div id="chart">
+<!-- <div class="container">
+  <canvas id="myChart"></canvas>
+</div> -->
+<script type="text/javascript" src="../static/js/jquery_try.js"></script>
+<script type="text/javascript" src="../static/js/piechart.js"></script>
+<script type="text/javascript" src="../static/js/bubblechart.js"></script>
+{% endblock content %}
