@@ -9,7 +9,7 @@ def findOrder1(numCourses, prerequisites):
         indegree[pre[0]] += 1
     # print(graph)
     # print(indegree)
-    visited = [False]*numCourses
+    # visited = [False]*numCourses
     queue1 = []
     queue2 = []
     for i in range(numCourses):
@@ -28,6 +28,26 @@ def findOrder1(numCourses, prerequisites):
     return queue2
 
 
+def DFS(v, stack, graph, visited, recstack):
+    visited[v] = True
+    recstack[v] = True
+    flag = True
+    for ver in graph[v]:
+        if visited[ver] == False:
+            flag = DFS(ver, stack, graph, visited, recstack)
+        elif recstack[ver] == True:
+            return False
+    stack.insert(0, v)
+    recstack[v] = False
+
+    return flag
+
+    # if flag == False:
+    #     return False
+    # else:
+    #     return True
+
+
 def findOrder2(numCourses, prerequisites):
     graph = [[] for _ in range(numCourses)]
     indegree = [0]*numCourses
@@ -42,23 +62,6 @@ def findOrder2(numCourses, prerequisites):
             if not DFS(i, stack, graph, visited, recstack):
                 return []
     return stack
-
-
-def DFS(v, stack, graph, visited, recstack):
-    visited[v] = True
-    recstack[v] = True
-    flag = True
-    for ver in graph[v]:
-        if visited[ver] == False:
-            flag = DFS(ver, stack, graph, visited, recstack)
-        elif recstack[ver] == True:
-            return False
-    stack.insert(0, v)
-    recstack[v] = False
-    if flag == False:
-        return False
-    else:
-        return True
 
 
 numCourses = 4
